@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4f87a879f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css" lang="CSS">
+    <title>My portfolio</title>
+</head>
+<body>
+    <section id="intro">
+        <div class="nav-bar">
+            <h2>Myportfolio</h2>
+            <nav>
+                <ul class="nav-links" id="sidemenu">
+                    <li ><a href="#about">About me</a></li> 
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a class="but" href="#contact"><button>Contact</button></a></li>
+                    <i class="fa-solid fa-x " onclick="closemenu()" alt="close"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" alt="Menu"></i>
+            </nav>  
+        </div>
+        <div class="intro-text">
+        <h3>Web developer</h3>
+        <h2>Hello I m Manaseh Njoroge</h2>
+        </div>
+    </section>
+   
+    <div id="about"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="assets/images/web-designer-developer-jokes-humour-funny-8.jpg" alt="">
+                </div>
+                <div class="col-2">
+                    <h2 class="sub-title"> About me</h2>
+                    <p>
+                        I am a student at Kabarak University,studying Computer Science<br>
+                        I m a novice in programming with some basics in; C C++ Java.<br> 
+                        I m loving PHP and generally learning more about the web and I m looking forward to knowing more<br>
+                        My hobbies are cooking, playing chess and watching documentaries.
+                        I work well in teams.
+                       </p>
+                    <div class="tb-titles">
+                        <p class="tb-links active-link" onclick="opentb('skills')">Skills</p>
+                        <p class="tb-links" onclick="opentb('education')">Education</p>
+                    </div>   
+                    <div class="tb-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Making frontend</li>
+                            <li><span>Backend</span><br>Website hosting and maintenance</li>
+                        </ul>
+                    </div>   
+                    <div class="tb-contents" id="education">
+                        <ul>
+                            <li><span>Muranga High School</span><br>General computer skills</li>
+                            <li><span>Codecademy</span><br>Basic Frontend development: HTML & CSS</li>
+                            <li><span>Kabarak University</span><br><span style="color:rgba(6, 128, 6, 0.733)">Current</span><br> Studying Computer Science</li>
+                        </ul>
+                    </div>              
+                </div>
+            </div>
+        </div>
+    
+   
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-title">My Services</h2>
+            <div class="services-list">
+                <div class="">
+                    <i class="fa-solid fa-code"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>Frontend</h2>
+                    <p>I can make you the user interface of a website using html,css and js</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="">
+                    <i class="fa-brands fa-laravel"></i>
+                    <i class="fa-brands fa-php"></i>
+                    <h2>Backend</h2>
+                    <p>Maintaining websites and their databases </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="">
+                    <i class="fa-solid fa-school"></i>
+                    <i class="fa-solid fa-pencil"></i>
+                    <h2>Projects</h2>
+                    <p>We can work together in school projects</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    <!-- <p>Services I m willing to offer are:</p>
+    <ul>
+        <li>Making websites</li>
+        <li>Maintaining websites</li>
+        <li>Helping out in teams</li>
+        <li>Build web based projects</li>
+    </ul>
+    </div> -->
+        <div class="container">
+            <h2 class="sub-title">My projects</h2>
+           
+            <div class="worklist">
+                <div class="work">
+                <img src="assets/images/laravel-php-framework.jpg" alt="">
+                    <div class="layer">
+                       <h3>Laravel project(Koffee,newapp)</h3>
+                        <p>This is a simple website that takes in your info and you are able to view it</p>
+                        <a href="cane-chamber-34749.herokuapp.com/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            <div class="work">
+                <img src="assets/images/html.png" alt="" style="width:533 ;height:370px">
+                <div class="layer">
+                    <h3>Codecademy projects</h3>
+                     <p>Some static sites from codecademy </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                </div>
+            </div>
+            <button class="btn"><a href="#" style="text-decoration:none ;">See More</a></button>
+        </div>
+    </div>
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>manasehnjoroge7@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0726166461</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="#" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Whats your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" >Submit</button>
+                        
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>copyright © Manaseh. Made by me <i class="fa-solid fa-heart"></i></p>
+    </div>
+    <script type="text/javascript" src="assets/main.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyNJg_nMmbD3OQmFZLjbTZruO3pYrX_9SUjldsWShBu0o29-qqN94X1Fp_F0IzjS7M2ow/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg =document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent sucessfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset}
+                )
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </div>
+
+</body>
+</html>
